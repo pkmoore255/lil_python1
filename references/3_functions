@@ -1,0 +1,45 @@
+# functions, parameters, input
+# reference, with examples
+# 
+##########################################################################
+
+# define function
+def bark():
+    print("woof woof")
+
+# for i in range(10):
+#     bark()
+
+# parameters
+def hello(name):
+    print(f"Hello {name}!")
+
+# hello("Jay")
+
+def add_numbers(num1,num2):
+    print(num1 + num2)
+
+# add_numbers(4,8)
+
+def dog_info(age,name):
+    print(f"Your dog, {name}, is {age} years old.")
+
+# dog_info(7,"Zoey")
+
+def double(number):
+    return number * 2
+
+new_number = double(5)
+# print(new_number)
+
+
+def make_caps(string):
+    cap_string = string.upper()
+    return cap_string
+
+names = ['g', 'i', 'joe']
+
+for name in names:
+    print(name.upper())
+
+print(make_caps("hey there"))
