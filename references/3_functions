@@ -39,7 +39,28 @@ def make_caps(string):
 
 names = ['g', 'i', 'joe']
 
-for name in names:
-    print(name.upper())
+# for name in names:
+#     print(name.upper())
 
-print(make_caps("hey there"))
+# print(make_caps("hey there"))
+
+
+# input
+
+# user_text = input('Please enter your name: ')
+# print(f"Hey there {user_text}")
+
+# user_number = input("What do you want to double?")
+# print(int(user_number)*2)
+
+# def change_text_case()
+
+user_text = input("Enter some text: ")
+upper_or_lower = input("Enter 1 for uppercase and 2 for lowercase: ")
+
+if upper_or_lower == "1":
+    print(user_text.upper())
+if upper_or_lower == "2":
+    print(user_text.lower())
+else:
+    print("Please try again.")
