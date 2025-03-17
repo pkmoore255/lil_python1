@@ -1,4 +1,4 @@
-# classes, instances
+# classes, instances, methods
 # blueprint / plans
 # 
 ##########################################################################
@@ -12,15 +12,23 @@ class Dog:
         print("I am alive")
         self.lucky_number = random.randint(1,10)
         self.name = name
+    
+    def bark(self):
+        print(f"woof! my name is {self.name} and my number is {self.lucky_number}")
+
 
 # print(Dog.info)
 
 # dog instance/object
-# dog1 = Dog("Fido")
-# dog2 = Dog("Toopka")
+dog1 = Dog("Fido")
+dog2 = Dog("Toopka")
 
 # print(dog1.lucky_number, dog1.name) 
 # print(dog2.lucky_number, dog2.name)
+
+
+dog1.bark()
+dog2.bark()
 
 # desk class
 
@@ -35,7 +43,7 @@ def __init__(self, leg_count, shelf_count, surface_type, color):
 
 
 # print(Desk.legs)
-my_desk = Desk(3, 5, "flat", "gray")
+# my_desk = Desk(3, 5, "flat", "gray")
 
     # legs = 3
     # shelves = 5
