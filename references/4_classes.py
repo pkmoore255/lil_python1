@@ -1,15 +1,22 @@
-# classes, instances, methods
+# classes, instances, methods, inheritance
 # blueprint / plans
 # 
 ##########################################################################
 import random
 
+class Animal:
+    info = "a living organism that feeds on organic matter"
+
+    def __init__(self):
+        print("an animal is created")
+
 # dog class
-class Dog:
+class Dog(Animal):
     info = "Man's best friend"
 
     def __init__(self, name):
-        print("I am alive")
+        super().__init__()
+        print("a dog is created")
         self.lucky_number = random.randint(1,10)
         self.name = name
     
@@ -25,7 +32,7 @@ dog2 = Dog("Toopka")
 
 # print(dog1.lucky_number, dog1.name) 
 # print(dog2.lucky_number, dog2.name)
-
+print(dog1.info)
 
 dog1.bark()
 dog2.bark()
