@@ -7,28 +7,40 @@ import random
 class Animal:
     info = "a living organism that feeds on organic matter"
 
-    def __init__(self):
+    def __init__(self, name):
         print("an animal is created")
+        self.name = name
 
 # dog class
 class Dog(Animal):
     info = "Man's best friend"
 
     def __init__(self, name):
-        super().__init__()
+        # super().__init__(name)    points to / runs parent class first
         print("a dog is created")
         self.lucky_number = random.randint(1,10)
         self.name = name
+        self.fur = ""
     
     def bark(self):
         print(f"woof! my name is {self.name} and my number is {self.lucky_number}")
 
 
+
+class Bulldog(Dog):
+
+    def __init__(self, name):
+        super().__init__(name)
+        print("A bulldog is created")
+
+
 # print(Dog.info)
 
 # dog instance/object
-dog1 = Dog("Fido")
-dog2 = Dog("Toopka")
+dog1 = Bulldog("Fido")
+
+
+# dog2 = Dog("Toopka")
 
 # print(dog1.lucky_number, dog1.name) 
 # print(dog2.lucky_number, dog2.name)
